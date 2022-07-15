@@ -1,0 +1,7 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4'
+g++ -c Hamiltonian.cpp
+g++ -c Graph.cpp
+g++ -o main hamiltonian.o graph.o main.cpp 
+make.exe: Leaving directory 'c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4'
+ 
