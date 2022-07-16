@@ -56,12 +56,6 @@ float Graph :: get_p(){
 int** Graph :: get_adj(){
   return adj;
 }
-// Obtiene el número de aristas
-// I: void
-// O: número de aristas
-int Graph :: get_edges(){
-  return edges;
-}
 // Imprime la matriz de adyacencia
 // I: void
 // O: void

@@ -6,7 +6,7 @@ using namespace std;
 // el camino hamiltoniano de un grafo
 class Hamiltonian{
   public:
-    Hamiltonian(Graph *g);
+    Hamiltonian(Graph *);
     ~Hamiltonian();
     void obtener_camino();
     void print();
@@ -17,7 +17,6 @@ class Hamiltonian{
     int n;
     int *visitado;
     int *recorrido;
-    int **matriz;
     int es_ciclo();
-    void buscar_camino(int, int);
+    int buscar_camino(int, int);
 };
