@@ -26,5 +26,5 @@ int main(){
   }
   cout << "Tiempo promedio: " << time / N << "[s]" << endl;
   cout << "Probabilidad promedio: " << PP / N << endl;
-  return 1;
+  return 0;
 }

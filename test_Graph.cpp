@@ -1,5 +1,5 @@
 #include "Graph.h"
-main(){
+int main(){
   cout << "Se crea el grafo" << endl;
   Graph *g = new Graph(10,0.5);
   cout << "Es representado mediante una matriz de adyacencia" << endl;
@@ -13,4 +13,5 @@ main(){
   g->print();
   g->~Graph();
   cout << "Se destruye el objeto Graph" << endl;
+  return 0;  
 }

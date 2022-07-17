@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 17 14:06:58 2022
+# Make data base, printed on Sun Jul 17 18:12:26 2022
 
 # Variables
 
@@ -53,7 +53,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_CWD = C:\Users\nicol\Documents\Universidad\Nivel 5\Taller de Progra\Tarea 4
+VSCODE_CWD = C:\Users\nicol\AppData\Local\Programs\Microsoft VS Code
 # default
 MAKE_HOST := x86_64-w64-mingw32
 # environment
@@ -75,7 +75,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_852_PKNWEKGUDTDKQTXI
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2448_PRLYBQWILAUVKPJP
 # environment
 COMPUTERNAME = DESKTOP-GJJBLUV
 # environment
@@ -185,7 +185,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 852
+VSCODE_PID = 2448
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-GJJBLUV
 # variable set hash-table stats:
@@ -197,7 +197,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-GJJBLUV
 
 # Directories
 
-# . (key c:/Users/nicol/Documents/Universidad/Nivel 5/Taller de Progra/Tarea 4, mtime 1658026191ll): 16 files, no impossibilities.
+# . (key c:/Users/nicol/Documents/Universidad/Nivel 5/Taller de Progra/Tarea 4, mtime 1658090024ll): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -332,7 +332,8 @@ test_Eficiencia: test_Eficiencia.cpp graph.o hamiltonian.o
 	g++ -o test_Eficiencia test_Eficiencia.cpp graph.o hamiltonian.o
 
 test_Graph: test_Graph.cpp graph.o
-#  Implicit rule search has not been done.
+#  Imp 
+licit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 11):
@@ -348,7 +349,8 @@ run_test_Eficiencia:
 main: main.cpp graph.o hamiltonian.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
+#  
+ File has not been updated.
 #  recipe to execute (from 'Makefile', line 17):
 	g++ -o main main.cpp graph.o hamiltonian.o
 
@@ -372,7 +374,8 @@ graph.o: Graph.cpp Graph.h
 # < := Graph.cpp
 # automatic
 # ^ := Graph.cpp Graph.h
-# automatic
+# automa 
+tic
 # ? := Graph.cpp Graph.h
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
@@ -400,6 +403,6 @@ run_test_Graph:
 # strcache performance: lookups = 66 / hit rate = 54%
 # hash-table stats:
 # Load=30/8192=0%, Rehash=0, Collisions=1/66=2%
-# Finished Make data base on Sun Jul 17 14:06:58 2022
+# Finished Make data base on Sun Jul 17 18:12:26 2022
 
  

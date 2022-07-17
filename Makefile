@@ -1,23 +1,22 @@
-FLAGS= -O2 -g
 all: test_Hamiltonian test_Graph test_Eficiencia main
 
-graph.o: Graph.cpp Graph.h
+Graph.o: Graph.cpp Graph.h
 	g++ -c Graph.cpp
 
-hamiltonian.o: Hamiltonian.cpp Hamiltonian.h
+Hamiltonian.o: Hamiltonian.cpp Hamiltonian.h
 	g++ -c Hamiltonian.cpp
 
-test_Graph: test_Graph.cpp graph.o
-	g++ -o test_Graph test_Graph.cpp graph.o
+test_Graph: test_Graph.cpp Graph.o
+	g++ -o test_Graph test_Graph.cpp Graph.o
 
-test_Hamiltonian: test_Hamiltonian.cpp graph.o hamiltonian.o
-	g++ -o test_Hamiltonian test_Hamiltonian.cpp graph.o hamiltonian.o
+test_Hamiltonian: test_Hamiltonian.cpp Graph.o Hamiltonian.o
+	g++ -o test_Hamiltonian test_Hamiltonian.cpp Graph.o Hamiltonian.o
 
-main: main.cpp graph.o hamiltonian.o
-	g++ -o main main.cpp graph.o hamiltonian.o
+main: main.cpp Graph.o Hamiltonian.o
+	g++ -o main main.cpp Graph.o Hamiltonian.o
 
-test_Eficiencia: test_Eficiencia.cpp graph.o hamiltonian.o
-	g++ -o test_Eficiencia test_Eficiencia.cpp graph.o hamiltonian.o
+test_Eficiencia: test_Eficiencia.cpp Graph.o Hamiltonian.o
+	g++ -o test_Eficiencia test_Eficiencia.cpp Graph.o Hamiltonian.o
 
 run_test_Hamiltonian:
 	./test_Hamiltonian
