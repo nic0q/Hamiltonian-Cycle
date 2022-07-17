@@ -3,20 +3,22 @@
 using namespace std;
 
 // Clase Hamiltonian: Clase que representa el problema de encontrar
-// el camino hamiltoniano de un grafo
+// el ciclo hamiltoniano de un grafo, su solucion es encontrar el ciclo 
+// hamiltoniano del grafo entregado.
 class Hamiltonian{
   public:
     Hamiltonian(Graph *);
     ~Hamiltonian();
-    void obtener_camino();
+    int obtener_ciclo();
     void print();
-    Graph *get_graph();
-    void recorer_camino();
+    void set_graph(Graph *);
   private:
     Graph *g;
     int n;
     int *visitado;
     int *recorrido;
     int es_ciclo();
-    int buscar_camino(int, int);
+    Graph *get_graph();
+    void recorrer_ciclo();
+    int buscar_ciclo(int, int);
 };

@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 15 18:29:58 2022
+# Make data base, printed on Sat Jul 16 20:46:25 2022
 
 # Variables
 
@@ -31,8 +31,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CUR 
-DIR := c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4
+CURDIR := c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4
 # default
 SHELL := C:/w64devkit/bin/sh.exe
 # environment
@@ -76,7 +75,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1740_HEHCWGNUGRJCNEZJ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9516_NNUCTTLIXWRJBSRK
 # environment
 COMPUTERNAME = DESKTOP-GJJBLUV
 # environment
@@ -108,7 +107,8 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
 USERDOMAIN = DESKTOP-GJJBLUV
 # environment
-MAKELEVEL := 0
+MAKELEVEL :=  
+0
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -186,7 +186,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 1740
+VSCODE_PID = 9516
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-GJJBLUV
 # variable set hash-table stats:
@@ -198,9 +198,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-GJJBLUV
 
 # Directories
 
-# . (key c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4, mtime 1657917227ll): 13 files, no impossibilities.
+# . (key c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4, mtime 1658018748ll): 15 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -208,7 +208,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-GJJBLUV
 
 # Files
 
-all: main
+all: test_Hamiltonian test_Graph test_Eficiencia main
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -219,23 +219,29 @@ all: main
 
 # Not a target:
 Hamiltonian.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-15 14:07:55
-#  File has been updated.
-#  Successfully updated.
-
-# Not a target:
-Graph.h:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-Hamiltonian.cpp:
+test_Hamiltonian.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-15 16:27:37
+#  Last modified 2022-07-16 20:20:08
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+Graph.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 18:27:03
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Hamiltonian.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .SUFFIXES:
@@ -245,16 +251,35 @@ Hamiltonian.cpp:
 
 # Not a target:
 Graph.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 19:50:19
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 20:45:44
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+test_Eficiencia.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-Makefile:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-14 23:34:22
-#  File has been updated.
-#  Successfully updated.
+test_Graph.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -262,78 +287,120 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-run:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
-	./main
-
-clean:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 17):
-	rm -f *.o main
-
-hamiltonian.o: Hamiltonian.cpp Hamiltonian.h
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := hamiltonian.o
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := Hamiltonian.cpp Hamiltonian.h
-# automatic
-# | := 
-# automatic
-# < := Hamiltonian.cpp
-# automatic
-# ^ := Hamiltonian.cpp Hamiltonian.h
-# automatic
-# ? := Hamiltonian.cpp Hamiltonian.h
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 8):
-	g++ -c Hamiltonian.cpp
-
-main: hamiltonian.o graph.o
+test_Hamiltonian: test_Hamiltonian.cpp graph.o hamiltonian.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
-#  recipe to execute (from 'Makefile', line 11):
-	g++ -o main hamiltonian.o graph.o main.cpp 
+#  recipe to execute (from 'Makefile', line 14):
+	g++ -o test_Hamiltonian test_Hamiltonian.cpp graph.o hamiltonian.o
 
-graph.o: Graph.cpp Graph.h
+run_test_Hamiltonian:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	./test_Hamiltonian
+
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 32):
+	./main
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 35):
+	rm -f *.o test_Eficiencia test_Hamiltonian test_Graph main *.exe
+
+hamiltonian.o: Hamiltonian.cpp Hamiltonian.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	g++ -c Hamiltonian.cpp
+
+test_Eficiencia: test_Eficiencia.cpp graph.o hamiltonian.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	g++ -o test_Eficiencia test_Eficiencia.cpp graph.o hamiltonian.o
+
+test_Graph: test_Graph.cpp graph.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 11):
+	g++ -o test_Graph test_Graph.cpp graph.o
+
+run_test_Eficiencia:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
+	./test_Eficiencia
+
+main: main.cpp graph.o hamiltonian.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	g++ -o main main.cpp graph.o hamiltonian.o
+
+graph.o: Graph.cpp Graph.h
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := graph.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := Graph.cpp Graph.h
+# automatic
+# | := 
+# automatic
+# < := Graph.cpp
+# automatic
+# ^ := Graph.cpp Graph.h
+# automatic
+# ? := Graph.cpp Graph.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'Makefile', line 5):
 	g++ -c Graph.cpp
 
+run_test_Graph:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	./test_Graph
+
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/33=0%
+# Load=23/1024=2%, Rehash=0, Collisions=0/58=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 196 B / avg = 9 B
-# current buf: size = 8162 B / used = 196 B / count = 21 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 343 B / avg = 11 B
+# current buf: size = 8162 B / used = 343 B / count = 29 / avg = 11 B
 
-# strcache performance: lookups = 39 / hit rate = 46%
+# strcache performance: lookups = 65 / hit rate = 55%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/39=3%
-# Finished Make data base on Fri Jul 15 18:29:58 2022
+# Load=29/8192=0%, Rehash=0, Collisions=1/65=2%
+# Finished Make data base on Sat Jul 16 20:46:25 2022
 
  

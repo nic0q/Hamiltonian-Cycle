@@ -21,13 +21,18 @@ Graph :: Graph(int n, float p){
 // O: void
 void Graph :: generate_matrix(int n, float p){
   for(int i = 0; i < n; i++){
-    for(int j = 0; j < n; j++){
+    for(int j = i + 1; j < n; j++){
       if(double(rand())/RAND_MAX < p){
-        adj[i][j] = 1;
-        adj[j][i] = 1;
+        this->adj[i][j] = 1;
+        this->adj[j][i] = 1;
+      }
+      else{
+        this->adj[i][j] = 0;
+        this->adj[j][i] = 0;
       }
     }
   }
+  this->adj = adj;
 }
 // Destructor de la clase Graph
 // I: void

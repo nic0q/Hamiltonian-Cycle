@@ -2,8 +2,8 @@
 #include <time.h>
 
 int main(){
-  float p = 1.0 / 30, PP = 0;
-  int N = 50, nodos = 15;
+  float p = 0.5, PP = 0;
+  int N = 50, nodos = 300;
   double time, time2;
   unsigned t0, t1;
   cout << "Numero de iteraciones: " << endl;
