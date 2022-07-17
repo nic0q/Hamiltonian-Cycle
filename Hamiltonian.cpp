@@ -13,6 +13,9 @@ Hamiltonian :: Hamiltonian(Graph *g){
 // I: void
 // O: void
 Hamiltonian :: ~Hamiltonian(){
+  g->~Graph();        // Se destruye el grafo g
+  delete[] recorrido; // Se elimina el arreglo de recorrido
+  delete[] visitado;  // Se liberan los arreglos de recorrido y visitado
 }
 // Busca el camino hamiltoniano
 // I: nodo actual, visitados
@@ -58,15 +61,18 @@ int Hamiltonian :: obtener_ciclo(){
 // Imrpime el recorrido del ciclo hamiltoniano
 // I: void
 // O: void
-void Hamiltonian :: recorrer_ciclo(){
+void Hamiltonian :: recorrer_ciclo(){ // Se imprime el ciclo hamiltoniano
   for(int i = 0; i < this->n; i++){
     cout << this->recorrido[i] << "->";
     if(this->recorrido[i+1] == -1){
+      cout << this->recorrido[0] << endl;
       break;
     }
   }
-  cout << this->recorrido[0] << endl;
 }
+// Setea el grafo en Hamiltonian
+// I: grafo
+// O: void
 void Hamiltonian :: set_graph(Graph* g){
   this->g = g;
 }
@@ -74,9 +80,7 @@ void Hamiltonian :: set_graph(Graph* g){
 // I: void
 // O: entero que indica si es ciclo o no 1 | 0
 int Hamiltonian :: es_ciclo(){
-  int inicial = this->recorrido[0];
-  int final = this->recorrido[this->n-1];
-  return this->g->get_adj()[inicial][final];
+  return this->g->get_adj()[this->recorrido[0]][this->recorrido[this->n-1]];
 }
 // Obtiene el grafo
 // I: void
