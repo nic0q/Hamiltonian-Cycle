@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Jul 16 22:14:20 2022
+# Make data base, printed on Sun Jul 17 14:06:58 2022
 
 # Variables
 
@@ -31,7 +31,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CURDIR := c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4
+CURDIR := c:/Users/nicol/Documents/Universidad/Nivel 5/Taller de Progra/Tarea 4
 # default
 SHELL := C:/w64devkit/bin/sh.exe
 # environment
@@ -53,12 +53,11 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_CWD = C:\Users\nicol\AppData\Local\Programs\Microsoft VS Code
+VSCODE_CWD = C:\Users\nicol\Documents\Universidad\Nivel 5\Taller de Progra\Tarea 4
 # default
 MAKE_HOST := x86_64-w64-mingw32
 # environment
-PATH = C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\nicol\AppData\Local\Microsoft\WindowsApps;C:\Users\ni 
-col\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nicol\AppData\Local\gitkraken\bin;C:\Users\nicol\AppData\Roaming\npm;C:\w64devkit\bin;
+PATH = C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\nicol\AppData\Local\Microsoft\WindowsApps;C:\Users\nicol\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nicol\AppData\Local\gitkraken\bin;C:\Users\nicol\AppData\Roaming\npm;C:\w64devkit\bin;
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -76,7 +75,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3244_OTDSKXBICEQOEXMU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_852_PKNWEKGUDTDKQTXI
 # environment
 COMPUTERNAME = DESKTOP-GJJBLUV
 # environment
@@ -186,7 +185,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 3244
+VSCODE_PID = 852
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-GJJBLUV
 # variable set hash-table stats:
@@ -198,9 +197,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-GJJBLUV
 
 # Directories
 
-# . (key c:/Users/nicol/Documents/C�digo/Taller de Progra/Tarea 4, mtime 1658018859ll): 21 files, no impossibilities.
+# . (key c:/Users/nicol/Documents/Universidad/Nivel 5/Taller de Progra/Tarea 4, mtime 1658026191ll): 16 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -219,10 +218,9 @@ all: test_Hamiltonian test_Graph test_Eficiencia main
 
 # Not a target:
 Hamiltonian.h:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-16 18:31:55
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 test_Hamiltonian.cpp:
@@ -240,10 +238,9 @@ Graph.h:
 
 # Not a target:
 Hamiltonian.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2022-07-16 18:34:16
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .SUFFIXES:
@@ -254,7 +251,7 @@ Hamiltonian.cpp:
 # Not a target:
 Graph.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-16 19:50:19
+#  Last modified 2022-07-16 22:37:55
 #  File has been updated.
 #  Successfully updated.
 
@@ -291,28 +288,11 @@ main.cpp:
 
 test_Hamiltonian: test_Hamiltonian.cpp graph.o hamiltonian.o
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
-# automatic
-# @ := test_Hamiltonian
-# automatic
-# % := 
-# automatic
-# * := 
-# automatic
-# + := test_Hamiltonian.cpp graph.o hamiltonian.o
-# automatic
-# | := 
-# automatic
-# < := test_Hamiltonian.cpp
-# automatic
-# ^ := test_Hamiltonian.cpp graph.o hamiltonian.o
-# automatic
-# ? := test_Hamiltonian.cpp graph.o hamiltonian.o
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'Makefile', line 14):
 	g++ -o test_Hamiltonian test_Hamiltonian.cpp graph.o hamiltonian.o
 
@@ -339,9 +319,8 @@ clean:
 
 hamiltonian.o: Hamiltonian.cpp Hamiltonian.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-16 20:46:53
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
 	g++ -c Hamiltonian.cpp
 
@@ -375,9 +354,28 @@ main: main.cpp graph.o hamiltonian.o
 
 graph.o: Graph.cpp Graph.h
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-16 20:46:52
+#  Implicit/static pattern stem: ''
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := graph.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := Graph.cpp Graph.h
+# automatic
+# | := 
+# automatic
+# < := Graph.cpp
+# automatic
+# ^ := Graph.cpp Graph.h
+# automatic
+# ? := Graph.cpp Graph.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'Makefile', line 5):
 	g++ -c Graph.cpp
 
@@ -396,12 +394,12 @@ run_test_Graph:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 35 / storage = 430 B / avg = 12 B
-# current buf: size = 8162 B / used = 430 B / count = 35 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 30 / storage = 364 B / avg = 12 B
+# current buf: size = 8162 B / used = 364 B / count = 30 / avg = 12 B
 
-# strcache performance: lookups = 71 / hit rate = 50%
+# strcache performance: lookups = 66 / hit rate = 54%
 # hash-table stats:
-# Load=35/8192=0%, Rehash=0, Collisions=1/71=1%
-# Finished Make data base on Sat Jul 16 22:14:20 2022
+# Load=30/8192=0%, Rehash=0, Collisions=1/66=2%
+# Finished Make data base on Sun Jul 17 14:06:58 2022
 
  
